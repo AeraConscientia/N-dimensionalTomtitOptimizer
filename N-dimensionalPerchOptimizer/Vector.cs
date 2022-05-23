@@ -17,6 +17,14 @@ namespace N_dimensionalPerchOptimizer
             this.dim = dim;
         }
 
+        public Vector(Vector previousVector)
+        {
+            vector = new double[previousVector.dim];
+            dim = previousVector.dim;
+            for (int i = 0; i < dim; i++)
+                vector[i] = previousVector[i];
+        }
+
         public Vector(double x, double y)
         {
             vector = new double[2];

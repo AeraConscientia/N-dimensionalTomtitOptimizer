@@ -61,11 +61,11 @@ namespace N_dimensionalPerchOptimizer
             StreamWriter r = new StreamWriter(fs);
             r.Write(
                 @"
-| <><    <><    <><    <><    <><    <><    <><      ><>    ><>    ><>    ><>    ><>    ><>    ><> |
+| ____V____vv____________________________________VvV___________________________________vv____V____ |
 |                                                                                                  |
-| <><                          Протокол применения метода стаи окуней                          ><> |
+| V                          Протокол применения метода стаи синиц                               V |
 |              к задаче поиска оптимального управления и траектории дискретных систем              |
-| <><                                                                                          ><> |
+|   v                                                                                          v   |
 |__________________________________________________________________________________________________|
 ");
             r.Close();
@@ -101,6 +101,54 @@ namespace N_dimensionalPerchOptimizer
 
             dataGridView4.Rows[1].Cells[0].Value = "Величина шага";
             dataGridView4.Rows[1].Cells[1].Value = (0.6).ToString();
+
+
+            //dataGridView2.RowCount = 13;
+            //dataGridView2.Rows[0].Cells[0].Value = "Размер популяции";
+            //dataGridView2.Rows[0].Cells[1].Value = 100;
+            //
+            //dataGridView2.Rows[1].Cells[0].Value = "ϒ";
+            //dataGridView2.Rows[1].Cells[1].Value = 0.75.ToString();
+            //
+            //dataGridView2.Rows[2].Cells[0].Value = "η";
+            //dataGridView2.Rows[2].Cells[1].Value = 0.9.ToString();
+            //
+            //dataGridView2.Rows[3].Cells[0].Value = "Радиус окрестности ро";
+            //dataGridView2.Rows[3].Cells[1].Value = 5;
+            //
+            //dataGridView2.Rows[4].Cells[0].Value = "c1";
+            //dataGridView2.Rows[4].Cells[1].Value = 5;
+            //
+            //dataGridView2.Rows[5].Cells[0].Value = "c2";
+            //dataGridView2.Rows[5].Cells[1].Value = 5;
+            //
+            //dataGridView2.Rows[6].Cells[0].Value = "c3";
+            //dataGridView2.Rows[6].Cells[1].Value = 5;
+            //
+            //dataGridView2.Rows[7].Cells[0].Value = "Матрица памяти K";
+            //dataGridView2.Rows[7].Cells[1].Value = 10;
+            //
+            //dataGridView2.Rows[8].Cells[0].Value = "h";
+            //dataGridView2.Rows[8].Cells[1].Value = 0.1.ToString();
+            //
+            //dataGridView2.Rows[9].Cells[0].Value = "L";
+            //dataGridView2.Rows[9].Cells[1].Value = 10;
+            //
+            //dataGridView2.Rows[10].Cells[0].Value = "P";
+            //dataGridView2.Rows[10].Cells[1].Value = 30;
+            //
+            //dataGridView2.Rows[11].Cells[0].Value = "µ";
+            //dataGridView2.Rows[11].Cells[1].Value = 5;
+            //
+            //dataGridView2.Rows[12].Cells[0].Value = "ε";
+            //dataGridView2.Rows[12].Cells[1].Value = 0.000000001.ToString();
+
+            //dataGridView4.RowCount = 2;
+            //dataGridView4.Rows[0].Cells[0].Value = "λ";//"Параметр распределения";
+            //dataGridView4.Rows[0].Cells[1].Value = (1.5).ToString();
+            //
+            //dataGridView4.Rows[1].Cells[0].Value = "α";
+            //dataGridView4.Rows[1].Cells[1].Value = (0.001).ToString();
         }
 
         private void LoadParams()
@@ -611,11 +659,11 @@ namespace N_dimensionalPerchOptimizer
             StreamWriter r = new StreamWriter(fs);
             r.Write(
                 @"
-| <><    <><    <><    <><    <><    <><    <><      ><>    ><>    ><>    ><>    ><>    ><>    ><> |
+| ____V____vv____________________________________VvV___________________________________vv____V____ |
 |                                                                                                  |
-| <><                          Протокол применения метода стаи окуней                          ><> |
+| V                          Протокол применения метода стаи синиц                               V |
 |              к задаче поиска оптимального управления и траектории дискретных систем              |
-| <><                                                                                          ><> |
+|   v                                                                                          v   |
 |__________________________________________________________________________________________________|
 ");
             r.Close();

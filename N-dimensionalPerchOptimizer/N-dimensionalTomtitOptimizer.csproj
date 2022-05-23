@@ -60,6 +60,7 @@
     <Compile Include="AlgorithmTask7.cs" />
     <Compile Include="AlgorithmTask8.cs" />
     <Compile Include="AlgorithmTask9.cs" />
+    <Compile Include="AlgorithmTit.cs" />
     <Compile Include="ErrorGraph.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +88,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Result.cs" />
+    <Compile Include="Tit.cs" />
     <Compile Include="Vector.cs" />
     <EmbeddedResource Include="ErrorGraph.resx">
       <DependentUpon>ErrorGraph.cs</DependentUpon>
@@ -177,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomtit.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
