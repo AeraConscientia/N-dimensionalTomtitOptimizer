@@ -29,16 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.textBoxU1_1 = new System.Windows.Forms.TextBox();
             this.textBoxU2_1 = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.textBoxX0_1 = new System.Windows.Forms.TextBox();
             this.numericUpDownN1 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,132 +64,132 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxExample = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.textBoxU31 = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBoxU21 = new System.Windows.Forms.TextBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBoxU32 = new System.Windows.Forms.TextBox();
             this.textBoxU22 = new System.Windows.Forms.TextBox();
             this.textBoxU11 = new System.Windows.Forms.TextBox();
             this.textBoxU12 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.textBoxX33 = new System.Windows.Forms.TextBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.textBoxX11 = new System.Windows.Forms.TextBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.textBoxX22 = new System.Windows.Forms.TextBox();
             this.numericUpDownN2 = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.textBoxU1_3 = new System.Windows.Forms.TextBox();
             this.textBoxU2_3 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.textBoxX0_3 = new System.Windows.Forms.TextBox();
             this.numericUpDownN3 = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.textBoxU1_4 = new System.Windows.Forms.TextBox();
             this.textBoxU2_4 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.textBoxX0_4 = new System.Windows.Forms.TextBox();
             this.numericUpDownN4 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.textBoxU1_5 = new System.Windows.Forms.TextBox();
             this.textBoxU2_5 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.textBoxX01_5 = new System.Windows.Forms.TextBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.textBoxX02_5 = new System.Windows.Forms.TextBox();
             this.numericUpDownN5 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.textBoxU1_6 = new System.Windows.Forms.TextBox();
             this.textBoxU2_6 = new System.Windows.Forms.TextBox();
             this.numericUpDownN6 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.textBoxX01_6 = new System.Windows.Forms.TextBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.textBoxX02_6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.textBoxU1_7 = new System.Windows.Forms.TextBox();
             this.textBoxU2_7 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.numericUpDownN7 = new System.Windows.Forms.NumericUpDown();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
             this.textBoxX01_7 = new System.Windows.Forms.TextBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
             this.textBoxX02_7 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.textBoxU1_8 = new System.Windows.Forms.TextBox();
             this.textBoxU2_8 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.numericUpDownN8 = new System.Windows.Forms.NumericUpDown();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.textBoxX01_8 = new System.Windows.Forms.TextBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
             this.textBoxX02_8 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.textBoxGamma_9 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
             this.textBoxU1_9 = new System.Windows.Forms.TextBox();
             this.textBoxU2_9 = new System.Windows.Forms.TextBox();
             this.groupBox20 = new System.Windows.Forms.GroupBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.textBoxX0_9 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.numericUpDownN9 = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.labelMinI = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.labelTimeStart = new System.Windows.Forms.Label();
             this.contextMenuStripProtocol = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxExample = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.pictureBox26 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox28 = new System.Windows.Forms.PictureBox();
-            this.pictureBox29 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox31 = new System.Windows.Forms.PictureBox();
-            this.pictureBox35 = new System.Windows.Forms.PictureBox();
-            this.pictureBox32 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -203,74 +204,73 @@
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN2)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN3)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN4)).BeginInit();
-            this.tabPage6.SuspendLayout();
-            this.groupBox11.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN5)).BeginInit();
-            this.tabPage7.SuspendLayout();
-            this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN6)).BeginInit();
-            this.groupBox14.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN7)).BeginInit();
-            this.groupBox16.SuspendLayout();
-            this.tabPage9.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN8)).BeginInit();
-            this.groupBox18.SuspendLayout();
-            this.tabPage10.SuspendLayout();
-            this.groupBox19.SuspendLayout();
-            this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExample)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.tabPage5.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            this.groupBox12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN6)).BeginInit();
+            this.groupBox14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            this.groupBox15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN7)).BeginInit();
+            this.groupBox16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            this.tabPage9.SuspendLayout();
+            this.groupBox17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN8)).BeginInit();
+            this.groupBox18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            this.groupBox19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            this.groupBox20.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxU1_1
@@ -302,6 +302,15 @@
             this.groupBox5.TabIndex = 2;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Начальное положение";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
+            this.pictureBox11.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(47, 16);
+            this.pictureBox11.TabIndex = 51;
+            this.pictureBox11.TabStop = false;
             // 
             // textBoxX0_1
             // 
@@ -387,14 +396,14 @@
             this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
             this.Column7});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle51.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView4.DefaultCellStyle = dataGridViewCellStyle51;
             this.dataGridView4.Location = new System.Drawing.Point(16, 211);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -404,8 +413,8 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle49;
             this.Column6.Frozen = true;
             this.Column6.HeaderText = "Характеристика";
             this.Column6.Name = "Column6";
@@ -416,8 +425,8 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle50;
             this.Column7.HeaderText = "Значения";
             this.Column7.Name = "Column7";
             this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -433,15 +442,15 @@
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column4,
             this.Column5});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.NullValue = null;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle54.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle54.NullValue = null;
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle54;
             this.dataGridView2.Location = new System.Drawing.Point(16, 23);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -452,8 +461,8 @@
             // 
             // Column4
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle52;
             this.Column4.Frozen = true;
             this.Column4.HeaderText = "Характеристика";
             this.Column4.Name = "Column4";
@@ -464,10 +473,10 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "N0";
-            dataGridViewCellStyle5.NullValue = null;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle53.Format = "N0";
+            dataGridViewCellStyle53.NullValue = null;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle53;
             this.Column5.HeaderText = "Значения";
             this.Column5.Name = "Column5";
             this.Column5.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -625,6 +634,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ограничения на управление";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(44, 14);
+            this.pictureBox3.TabIndex = 51;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBoxExample
+            // 
+            this.pictureBoxExample.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBoxExample.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBoxExample.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBoxExample.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxExample.Name = "pictureBoxExample";
+            this.pictureBoxExample.Size = new System.Drawing.Size(723, 230);
+            this.pictureBoxExample.TabIndex = 2;
+            this.pictureBoxExample.TabStop = false;
+            // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.Control;
@@ -660,6 +689,15 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Ограничения на управление";
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(423, 27);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(43, 17);
+            this.pictureBox6.TabIndex = 59;
+            this.pictureBox6.TabStop = false;
+            // 
             // textBoxU31
             // 
             this.textBoxU31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -669,6 +707,15 @@
             this.textBoxU31.TabIndex = 53;
             this.textBoxU31.Text = "0";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(245, 28);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(43, 17);
+            this.pictureBox5.TabIndex = 58;
+            this.pictureBox5.TabStop = false;
+            // 
             // textBoxU21
             // 
             this.textBoxU21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -677,6 +724,15 @@
             this.textBoxU21.Size = new System.Drawing.Size(55, 21);
             this.textBoxU21.TabIndex = 52;
             this.textBoxU21.Text = "0";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(68, 28);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(43, 17);
+            this.pictureBox4.TabIndex = 57;
+            this.pictureBox4.TabStop = false;
             // 
             // textBoxU32
             // 
@@ -740,6 +796,15 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Начальное положение";
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x3;
+            this.pictureBox9.Location = new System.Drawing.Point(423, 26);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox9.TabIndex = 59;
+            this.pictureBox9.TabStop = false;
+            // 
             // textBoxX33
             // 
             this.textBoxX33.Location = new System.Drawing.Point(475, 22);
@@ -748,6 +813,15 @@
             this.textBoxX33.TabIndex = 49;
             this.textBoxX33.Text = "7";
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
+            this.pictureBox8.Location = new System.Drawing.Point(233, 25);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox8.TabIndex = 58;
+            this.pictureBox8.TabStop = false;
+            // 
             // textBoxX11
             // 
             this.textBoxX11.Location = new System.Drawing.Point(66, 22);
@@ -755,6 +829,15 @@
             this.textBoxX11.Size = new System.Drawing.Size(47, 23);
             this.textBoxX11.TabIndex = 40;
             this.textBoxX11.Text = "2";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
+            this.pictureBox7.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox7.TabIndex = 57;
+            this.pictureBox7.TabStop = false;
             // 
             // textBoxX22
             // 
@@ -796,6 +879,17 @@
             this.label12.TabIndex = 54;
             this.label12.Text = "Число шагов разбиения";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox1.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex2_Large;
+            this.pictureBox1.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.SystemColors.Control;
@@ -823,6 +917,15 @@
             this.groupBox7.TabIndex = 56;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Ограничения на управление";
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(40, 15);
+            this.pictureBox10.TabIndex = 57;
+            this.pictureBox10.TabStop = false;
             // 
             // textBoxU1_3
             // 
@@ -863,6 +966,15 @@
             this.groupBox8.TabIndex = 52;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Начальное положение";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(47, 16);
+            this.pictureBox12.TabIndex = 52;
+            this.pictureBox12.TabStop = false;
             // 
             // textBoxX0_3
             // 
@@ -905,6 +1017,17 @@
             this.label21.TabIndex = 54;
             this.label21.Text = "Число шагов разбиения";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox2.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex3_Large;
+            this.pictureBox2.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox2.TabIndex = 51;
+            this.pictureBox2.TabStop = false;
+            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
@@ -922,9 +1045,9 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.textBoxU2_4);
             this.groupBox9.Controls.Add(this.pictureBox13);
             this.groupBox9.Controls.Add(this.textBoxU1_4);
-            this.groupBox9.Controls.Add(this.textBoxU2_4);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox9.Location = new System.Drawing.Point(6, 291);
             this.groupBox9.Name = "groupBox9";
@@ -932,6 +1055,15 @@
             this.groupBox9.TabIndex = 56;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Ограничения на управление";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(44, 14);
+            this.pictureBox13.TabIndex = 51;
+            this.pictureBox13.TabStop = false;
             // 
             // textBoxU1_4
             // 
@@ -973,6 +1105,15 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Начальное положение";
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
+            this.pictureBox15.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(47, 16);
+            this.pictureBox15.TabIndex = 51;
+            this.pictureBox15.TabStop = false;
+            // 
             // textBoxX0_4
             // 
             this.textBoxX0_4.Location = new System.Drawing.Point(66, 22);
@@ -1013,6 +1154,17 @@
             this.label1.TabIndex = 54;
             this.label1.Text = "Число шагов разбиения";
             // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox14.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex4_Large;
+            this.pictureBox14.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox14.TabIndex = 51;
+            this.pictureBox14.TabStop = false;
+            // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.SystemColors.Control;
@@ -1040,6 +1192,15 @@
             this.groupBox11.TabIndex = 62;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Ограничения на управление";
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
+            this.pictureBox18.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(43, 17);
+            this.pictureBox18.TabIndex = 57;
+            this.pictureBox18.TabStop = false;
             // 
             // textBoxU1_5
             // 
@@ -1093,6 +1254,15 @@
             this.groupBox12.TabStop = false;
             this.groupBox12.Text = "Начальное положение";
             // 
+            // pictureBox20
+            // 
+            this.pictureBox20.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
+            this.pictureBox20.Location = new System.Drawing.Point(233, 25);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox20.TabIndex = 58;
+            this.pictureBox20.TabStop = false;
+            // 
             // textBoxX01_5
             // 
             this.textBoxX01_5.Location = new System.Drawing.Point(66, 22);
@@ -1100,6 +1270,15 @@
             this.textBoxX01_5.Size = new System.Drawing.Size(47, 23);
             this.textBoxX01_5.TabIndex = 40;
             this.textBoxX01_5.Text = "2";
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
+            this.pictureBox21.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox21.TabIndex = 57;
+            this.pictureBox21.TabStop = false;
             // 
             // textBoxX02_5
             // 
@@ -1132,6 +1311,17 @@
             0,
             0});
             // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox22.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex5_Large;
+            this.pictureBox22.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox22.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox22.TabIndex = 57;
+            this.pictureBox22.TabStop = false;
+            // 
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.SystemColors.Control;
@@ -1159,6 +1349,15 @@
             this.groupBox13.TabIndex = 68;
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Ограничения на управление";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
+            this.pictureBox16.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(43, 17);
+            this.pictureBox16.TabIndex = 57;
+            this.pictureBox16.TabStop = false;
             // 
             // textBoxU1_6
             // 
@@ -1225,6 +1424,15 @@
             this.groupBox14.TabStop = false;
             this.groupBox14.Text = "Начальное положение";
             // 
+            // pictureBox19
+            // 
+            this.pictureBox19.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
+            this.pictureBox19.Location = new System.Drawing.Point(233, 25);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox19.TabIndex = 58;
+            this.pictureBox19.TabStop = false;
+            // 
             // textBoxX01_6
             // 
             this.textBoxX01_6.Location = new System.Drawing.Point(66, 22);
@@ -1232,6 +1440,15 @@
             this.textBoxX01_6.Size = new System.Drawing.Size(47, 23);
             this.textBoxX01_6.TabIndex = 40;
             this.textBoxX01_6.Text = "2";
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
+            this.pictureBox23.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox23.TabIndex = 57;
+            this.pictureBox23.TabStop = false;
             // 
             // textBoxX02_6
             // 
@@ -1250,6 +1467,17 @@
             this.label9.Size = new System.Drawing.Size(167, 17);
             this.label9.TabIndex = 66;
             this.label9.Text = "Число шагов разбиения";
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox17.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex6_Large;
+            this.pictureBox17.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox17.TabIndex = 63;
+            this.pictureBox17.TabStop = false;
             // 
             // tabPage8
             // 
@@ -1278,6 +1506,15 @@
             this.groupBox15.TabIndex = 74;
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "Ограничения на управление";
+            // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
+            this.pictureBox24.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(43, 17);
+            this.pictureBox24.TabIndex = 57;
+            this.pictureBox24.TabStop = false;
             // 
             // textBoxU1_7
             // 
@@ -1343,6 +1580,15 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "Начальное положение";
             // 
+            // pictureBox26
+            // 
+            this.pictureBox26.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
+            this.pictureBox26.Location = new System.Drawing.Point(233, 25);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox26.TabIndex = 58;
+            this.pictureBox26.TabStop = false;
+            // 
             // textBoxX01_7
             // 
             this.textBoxX01_7.Location = new System.Drawing.Point(66, 22);
@@ -1350,6 +1596,15 @@
             this.textBoxX01_7.Size = new System.Drawing.Size(47, 23);
             this.textBoxX01_7.TabIndex = 40;
             this.textBoxX01_7.Text = "0";
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
+            this.pictureBox27.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox27.TabIndex = 57;
+            this.pictureBox27.TabStop = false;
             // 
             // textBoxX02_7
             // 
@@ -1368,6 +1623,17 @@
             this.label10.Size = new System.Drawing.Size(39, 19);
             this.label10.TabIndex = 71;
             this.label10.Text = "N = ";
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox25.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex7_Large;
+            this.pictureBox25.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.InitialImage")));
+            this.pictureBox25.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox25.TabIndex = 69;
+            this.pictureBox25.TabStop = false;
             // 
             // tabPage9
             // 
@@ -1396,6 +1662,15 @@
             this.groupBox17.TabIndex = 80;
             this.groupBox17.TabStop = false;
             this.groupBox17.Text = "Ограничения на управление";
+            // 
+            // pictureBox28
+            // 
+            this.pictureBox28.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
+            this.pictureBox28.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox28.Name = "pictureBox28";
+            this.pictureBox28.Size = new System.Drawing.Size(43, 17);
+            this.pictureBox28.TabIndex = 57;
+            this.pictureBox28.TabStop = false;
             // 
             // textBoxU1_8
             // 
@@ -1462,6 +1737,15 @@
             this.groupBox18.TabStop = false;
             this.groupBox18.Text = "Начальное положение";
             // 
+            // pictureBox29
+            // 
+            this.pictureBox29.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
+            this.pictureBox29.Location = new System.Drawing.Point(233, 25);
+            this.pictureBox29.Name = "pictureBox29";
+            this.pictureBox29.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox29.TabIndex = 58;
+            this.pictureBox29.TabStop = false;
+            // 
             // textBoxX01_8
             // 
             this.textBoxX01_8.Location = new System.Drawing.Point(66, 22);
@@ -1469,6 +1753,15 @@
             this.textBoxX01_8.Size = new System.Drawing.Size(47, 23);
             this.textBoxX01_8.TabIndex = 40;
             this.textBoxX01_8.Text = "3";
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
+            this.pictureBox30.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(51, 17);
+            this.pictureBox30.TabIndex = 57;
+            this.pictureBox30.TabStop = false;
             // 
             // textBoxX02_8
             // 
@@ -1487,6 +1780,17 @@
             this.label16.Size = new System.Drawing.Size(39, 19);
             this.label16.TabIndex = 77;
             this.label16.Text = "N = ";
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox31.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex8_Large;
+            this.pictureBox31.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.InitialImage")));
+            this.pictureBox31.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox31.TabIndex = 75;
+            this.pictureBox31.TabStop = false;
             // 
             // tabPage10
             // 
@@ -1527,9 +1831,9 @@
             // 
             // groupBox19
             // 
+            this.groupBox19.Controls.Add(this.textBoxU2_9);
             this.groupBox19.Controls.Add(this.pictureBox32);
             this.groupBox19.Controls.Add(this.textBoxU1_9);
-            this.groupBox19.Controls.Add(this.textBoxU2_9);
             this.groupBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.groupBox19.Location = new System.Drawing.Point(6, 291);
             this.groupBox19.Name = "groupBox19";
@@ -1537,6 +1841,15 @@
             this.groupBox19.TabIndex = 56;
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "Ограничения на управление";
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
+            this.pictureBox32.Location = new System.Drawing.Point(83, 30);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(44, 14);
+            this.pictureBox32.TabIndex = 51;
+            this.pictureBox32.TabStop = false;
             // 
             // textBoxU1_9
             // 
@@ -1567,6 +1880,15 @@
             this.groupBox20.TabIndex = 52;
             this.groupBox20.TabStop = false;
             this.groupBox20.Text = "Начальное положение";
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
+            this.pictureBox34.Location = new System.Drawing.Point(11, 25);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(47, 16);
+            this.pictureBox34.TabIndex = 51;
+            this.pictureBox34.TabStop = false;
             // 
             // textBoxX0_9
             // 
@@ -1618,6 +1940,26 @@
             this.label18.TabIndex = 53;
             this.label18.Text = "N = ";
             // 
+            // pictureBox35
+            // 
+            this.pictureBox35.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.gamma;
+            this.pictureBox35.Location = new System.Drawing.Point(610, 325);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(44, 14);
+            this.pictureBox35.TabIndex = 52;
+            this.pictureBox35.TabStop = false;
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.pictureBox33.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex10_Large;
+            this.pictureBox33.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox33.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(723, 230);
+            this.pictureBox33.TabIndex = 51;
+            this.pictureBox33.TabStop = false;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -1657,348 +1999,6 @@
             this.contextMenuStripProtocol.Name = "contextMenuStripProtocol";
             this.contextMenuStripProtocol.Size = new System.Drawing.Size(61, 4);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 14);
-            this.pictureBox3.TabIndex = 51;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBoxExample
-            // 
-            this.pictureBoxExample.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBoxExample.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBoxExample.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBoxExample.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxExample.Name = "pictureBoxExample";
-            this.pictureBoxExample.Size = new System.Drawing.Size(723, 230);
-            this.pictureBoxExample.TabIndex = 2;
-            this.pictureBoxExample.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
-            this.pictureBox11.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(47, 16);
-            this.pictureBox11.TabIndex = 51;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(423, 27);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(43, 17);
-            this.pictureBox6.TabIndex = 59;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(245, 28);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(43, 17);
-            this.pictureBox5.TabIndex = 58;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(68, 28);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(43, 17);
-            this.pictureBox4.TabIndex = 57;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x3;
-            this.pictureBox9.Location = new System.Drawing.Point(423, 26);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox9.TabIndex = 59;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
-            this.pictureBox8.Location = new System.Drawing.Point(233, 25);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox8.TabIndex = 58;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
-            this.pictureBox7.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox7.TabIndex = 57;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex2_Large;
-            this.pictureBox1.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox1.TabIndex = 51;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(40, 15);
-            this.pictureBox10.TabIndex = 57;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(47, 16);
-            this.pictureBox12.TabIndex = 52;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox2.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex3_Large;
-            this.pictureBox2.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox2.TabIndex = 51;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(44, 14);
-            this.pictureBox13.TabIndex = 51;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
-            this.pictureBox15.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(47, 16);
-            this.pictureBox15.TabIndex = 51;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox14.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex4_Large;
-            this.pictureBox14.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox14.TabIndex = 51;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
-            this.pictureBox18.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(43, 17);
-            this.pictureBox18.TabIndex = 57;
-            this.pictureBox18.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            this.pictureBox20.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
-            this.pictureBox20.Location = new System.Drawing.Point(233, 25);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox20.TabIndex = 58;
-            this.pictureBox20.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
-            this.pictureBox21.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox21.TabIndex = 57;
-            this.pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            this.pictureBox22.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox22.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex5_Large;
-            this.pictureBox22.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBox22.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox22.TabIndex = 57;
-            this.pictureBox22.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
-            this.pictureBox16.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(43, 17);
-            this.pictureBox16.TabIndex = 57;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
-            this.pictureBox19.Location = new System.Drawing.Point(233, 25);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox19.TabIndex = 58;
-            this.pictureBox19.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            this.pictureBox23.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
-            this.pictureBox23.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox23.TabIndex = 57;
-            this.pictureBox23.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox17.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex6_Large;
-            this.pictureBox17.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBox17.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox17.TabIndex = 63;
-            this.pictureBox17.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            this.pictureBox24.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
-            this.pictureBox24.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(43, 17);
-            this.pictureBox24.TabIndex = 57;
-            this.pictureBox24.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            this.pictureBox26.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
-            this.pictureBox26.Location = new System.Drawing.Point(233, 25);
-            this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox26.TabIndex = 58;
-            this.pictureBox26.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
-            this.pictureBox27.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox27.TabIndex = 57;
-            this.pictureBox27.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox25.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex7_Large;
-            this.pictureBox25.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.InitialImage")));
-            this.pictureBox25.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox25.TabIndex = 69;
-            this.pictureBox25.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            this.pictureBox28.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
-            this.pictureBox28.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(43, 17);
-            this.pictureBox28.TabIndex = 57;
-            this.pictureBox28.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            this.pictureBox29.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
-            this.pictureBox29.Location = new System.Drawing.Point(233, 25);
-            this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox29.TabIndex = 58;
-            this.pictureBox29.TabStop = false;
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
-            this.pictureBox30.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(51, 17);
-            this.pictureBox30.TabIndex = 57;
-            this.pictureBox30.TabStop = false;
-            // 
-            // pictureBox31
-            // 
-            this.pictureBox31.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox31.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex8_Large;
-            this.pictureBox31.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.InitialImage")));
-            this.pictureBox31.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox31.TabIndex = 75;
-            this.pictureBox31.TabStop = false;
-            // 
-            // pictureBox35
-            // 
-            this.pictureBox35.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.gamma;
-            this.pictureBox35.Location = new System.Drawing.Point(610, 325);
-            this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(44, 14);
-            this.pictureBox35.TabIndex = 52;
-            this.pictureBox35.TabStop = false;
-            // 
-            // pictureBox32
-            // 
-            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
-            this.pictureBox32.Location = new System.Drawing.Point(83, 30);
-            this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(44, 14);
-            this.pictureBox32.TabIndex = 51;
-            this.pictureBox32.TabStop = false;
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox33.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex10_Large;
-            this.pictureBox33.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBox33.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(723, 230);
-            this.pictureBox33.TabIndex = 51;
-            this.pictureBox33.TabStop = false;
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
-            this.pictureBox34.Location = new System.Drawing.Point(11, 25);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(47, 16);
-            this.pictureBox34.TabIndex = 51;
-            this.pictureBox34.TabStop = false;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2019,6 +2019,7 @@
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormMain_KeyUp);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -2036,98 +2037,97 @@
             this.tabPage3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExample)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN6)).EndInit();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.tabPage8.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN7)).EndInit();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
             this.groupBox17.ResumeLayout(false);
             this.groupBox17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN8)).EndInit();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
             this.groupBox20.ResumeLayout(false);
             this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExample)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownN9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
