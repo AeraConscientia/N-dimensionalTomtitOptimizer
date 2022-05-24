@@ -40,7 +40,7 @@ namespace N_dimensionalTomtitOptimizer
         public double mu;
         public double eps;
         public Tit best;
-        public List<Tit> individuals = new List<Tit>();                       //Текущее множество синиц
+        public List<Tit> individuals = new List<Tit>();            //Текущее множество синиц
         public List<Tit> search_tits = new List<Tit>();            //Массив лучших положений всех синиц после скачков (см. Шаг 2.6)
         public List<Tit> Pool = new List<Tit>();
         public List<Tit> memory;
@@ -95,14 +95,14 @@ namespace N_dimensionalTomtitOptimizer
                 do
                 {
                     individuals = individuals.OrderBy(t => t.fitness).ToList();     //Шаг 2.2
-                    best = new Tit(individuals[0]);                       //x^1,k
+                    best = new Tit(individuals[0]);                                 //x^1,k
 
-                    ProcessInfoAboutFlock();                    //Шаг 2.3
-                    SolveStohasticDiffEq();                     //Шаг 2.4-2.6
+                    ProcessInfoAboutFlock();                                        //Шаг 2.3
+                    SolveStohasticDiffEq();                                         //Шаг 2.4-2.6
 
                     if ((k >= K) || (Math.Pow(r, k) < eps))     //Шаг 2.7
                     {
-                        Pool.Add(new Tit(memory.OrderBy(t => t.fitness).ToList()[0]));                       //Шаг 2.7 K=k
+                        Pool.Add(new Tit(memory.OrderBy(t => t.fitness).ToList()[0]));      //Шаг 2.7 K=k
                         break;
                     }
 
@@ -160,7 +160,7 @@ namespace N_dimensionalTomtitOptimizer
 
                 List<Tit> search = new List<Tit>(); //список всех скачков
 
-                search.Add(individuals[j]);        //x^j,k (0)
+                search.Add(individuals[j]);         //x^j,k (0)
                 for (int l = 0; l < L; l++)
                 {
                     Tit new_tit = new Tit(individuals[j].coords.dim);

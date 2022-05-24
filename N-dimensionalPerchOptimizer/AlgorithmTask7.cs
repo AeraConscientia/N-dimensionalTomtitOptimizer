@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace N_dimensionalTomtitOptimizer
 {
-    public class AlgorithmTask7 : AlgorithmPerch
+    public class AlgorithmTask7 : AlgorithmTit
     {
         public AlgorithmTask7(double U1, double U2, double x0, double x1)
         {
@@ -14,55 +14,17 @@ namespace N_dimensionalTomtitOptimizer
             U = new List<Tuple<double, double>>();
             U.Add(new Tuple<double, double>(U1, U2));
         }
-        public override void FormingPopulation() // +
-        {
-            for (int i = 0; i < population; i++)
-            {
-                Perch perch = new Perch(N_dim);
-                for (int j = 0; j < 2 * N_dim / 2; j++)
-                    perch.coords[j] = U[0].Item1 + rand.NextDouble() * (U[0].Item2 - U[0].Item1);
 
-                //for (int j = N_dim / 2; j < N_dim; j++)
-                //    perch.coords[j] = U[0].Item1 + rand.NextDouble() * (U[0].Item2 - U[0].Item1);
-
-                I(perch);
-                individuals.Add(perch);
-            }
-        }
-
-        public override List<double> Levy() // *
-        {
-            List<double> koefLevy = new List<double>(N_dim);
-            for (int i = 0; i < 2 * N_dim / 2; i++)
-            {
-                if (i % 2 == 0)
-                {
-                    R1 = rand.Next(Convert.ToInt32(0), Convert.ToInt32((U[0].Item2 - U[0].Item1) * 100)) / 100f; // (0, b1-a1)
-                    thetta1 = R1 * 2 * Math.PI;
-                    L1 = Math.Pow(R1 + 0.0001f, -1 / lambda);
-                    koefLevy.Add(L1 * Math.Sin(thetta1));
-                }
-                else
-                {
-                    R2 = rand.Next(Convert.ToInt32(0), Convert.ToInt32((U[0].Item2 - U[0].Item1) * 100)) / 100f; // (0, b2-a2)
-                    thetta2 = R2 * 2 * Math.PI;
-                    L2 = Math.Pow(R2 + 0.0001f, -1 / lambda);
-                    koefLevy.Add(L2 * Math.Cos(thetta2));
-                }
-            }
-            return koefLevy;
-        }
-
-        public override void I(Perch perch, bool flag = false)
+        public override void I(Tit tit, bool flag = false)
         {
             List<double> x1 = new List<double>();
             List<double> x2 = new List<double>();
             x1.Add(x0[0]); x2.Add(x0[1]);
 
-            for (int i = 0; i < N_dim/2; i++) // тут решилась проблема с количеством x
+            for (int i = 0; i < N_dim / 2; i++) // тут решилась проблема с количеством x
             {
                 x1.Add(x2[i]);
-                x2.Add(2 * x2[i] - x1[i] + perch.coords[i]/((N_dim / 2) * (N_dim / 2)));
+                x2.Add(2 * x2[i] - x1[i] + tit.coords[i] / ((N_dim / 2) * (N_dim / 2)));
             }
 
 
@@ -72,270 +34,152 @@ namespace N_dimensionalTomtitOptimizer
             double res2 = 0;
             for (int t = 0; t < N_dim / 2; t++) // N_dim или N_dim-1 ?
             {
-                res2 += perch.coords[t] * perch.coords[t];
+                res2 += tit.coords[t] * tit.coords[t];
             }
             res += (res2 / (2 * N_dim / 2));
 
-            perch.fitness = res;
+            tit.fitness = res;
             if (flag == true)
             {
                 Result result = Result.GetInstance();
                 result.X = x1;
                 result.X2 = x2;
-                result.fitness = perch.fitness;
+                result.fitness = tit.fitness;
                 result.U = new List<double>(N_dim / 2);
 
                 for (int i = 0; i < N_dim / 2; i++)
                 {
-                    result.U.Add(perch.coords[i]);
+                    result.U.Add(tit.coords[i]);
                 }
             }
         }
 
-        public override void MoveEPerchEFlock() // +
+        public override Vector Levy()
         {
-            sigma = rand.NextDouble() * 0.4 + 0.1; // sigma [0.1,  0.5]
-
-            for (int i = 0; i < NumFlocks; i++)
+            Vector koefLevy = new Vector(N_dim);
+            for (int i = 0; i < N_dim; i++)
             {
-                for (int j = 0; j < NumPerchInFlock; j++)
+                if (i % 2 == 0)
                 {
-                    int moveCount = (int)Math.Floor(sigma * NStep);
-
-                    List<Perch> move = new List<Perch>();
-                    for (int k = 0; k < moveCount; ++k)
-                    {
-                        Perch perch = new Perch(N_dim);
-                        for (int l = 0; l < N_dim / 2; l++)
-                        {
-                            double tmp = flock[i, j].coords[l] + k * ((flock[i, 0].coords[l] - flock[i, j].coords[l]) / (NStep));
-                            if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                                tmp = flock[i, j].coords[l];
-                            perch.coords[l] = tmp;
-                        }
-                        for (int l = N_dim / 2; l < N_dim; l++)
-                        {
-                            double tmp = flock[i, j].coords[l] + k * ((flock[i, 0].coords[l] - flock[i, j].coords[l]) / (NStep));
-                            if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                                tmp = flock[i, j].coords[l];
-                            perch.coords[l] = tmp;
-                        }
-                        I(perch);
-                        move.Add(perch);
-                    }
-                    move = move.OrderBy(s => s.fitness).ToList();
-                    flock[i, j] = move[0];
+                    R1 = random.Next(Convert.ToInt32(0), Convert.ToInt32((U[0].Item2 - U[0].Item1) * 100)) / 100f; // (0, b1-a1)
+                    thetta1 = R1 * 2 * Math.PI;
+                    L1 = Math.Pow(R1 + 0.0001f, -1 / lambda);
+                    koefLevy[i] = L1 * Math.Sin(thetta1);
                 }
-                Sort(flock, i);
+                else
+                {
+                    R2 = random.Next(Convert.ToInt32(0), Convert.ToInt32((U[0].Item2 - U[0].Item1) * 100)) / 100f; // (0, b2-a2)
+                    thetta2 = R2 * 2 * Math.PI;
+                    L2 = Math.Pow(R2 + 0.0001f, -1 / lambda);
+                    koefLevy[i] = L2 * Math.Cos(thetta2);
+                }
             }
-            SortFlocks();
+            return koefLevy;
         }
 
-        protected override void BestFlockSwim() // +
+        public override void GenerationAroundPool()
         {
-            sigma = rand.NextDouble() * 0.5 + 1; // sigma [1,  1.5]
-            int i = 0;
-            for (int j = 0; j < NumPerchInFlock; j++)
+            for (int i = 1; i < NP; i++)
             {
-                int moveCount = (int)Math.Floor(sigma * NStep);
-
-                List<Perch> move = new List<Perch>();
-                for (int k = 0; k < moveCount; ++k)
+                for (int j = 0; j < N_dim; j++)
                 {
-                    Perch perch = new Perch(N_dim);
-                    for (int l = 0; l < N_dim / 2; l++) // если координаты не выйдут за область определения - меняем. Иначе - оставляем.
-                    {
-                        double tmp = flock[i, j].coords[l] + k * ((flock[i, 0].coords[l] - flock[i, j].coords[l]) / (NStep));
-                        if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                            tmp = flock[i, j].coords[l];
-                        perch.coords[l] = tmp;
-                    }
-                    for (int l = N_dim / 2; l < N_dim; l++) // если координаты не выйдут за область определения - меняем. Иначе - оставляем.
-                    {
-                        double tmp = flock[i, j].coords[l] + k * ((flock[i, 0].coords[l] - flock[i, j].coords[l]) / (NStep));
-                        if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                            tmp = flock[i, j].coords[l];
-                        perch.coords[l] = tmp;
-                    }
-                    I(perch);
-                    move.Add(perch);
+                    double val = individuals[0].coords[j] + r * (-0.5 * (U[0].Item2 + U[0].Item1) + ((U[0].Item2 - U[0].Item1) * random.NextDouble() + U[0].Item1));
+
+                    if (val < U[0].Item1)
+                        val = (individuals[0].coords[j] - U[0].Item1) * random.NextDouble() + U[0].Item1;
+
+                    if (val > U[0].Item2)
+                        val = (U[0].Item2 - individuals[0].coords[j]) * random.NextDouble() + individuals[0].coords[j];
+
+                    individuals[i].coords[j] = val;
                 }
-                //Sort(move);
-                move = move.OrderBy(s => s.fitness).ToList();
-                flock[i, j] = move[0];
+
+                I(individuals[i]);
             }
-            Sort(flock, i);
         }
 
-        protected override void AverFlockSwim() // +
+        public override void GenerationAroundBest()
         {
-            sigma = rand.NextDouble() / 20 + 0.6; // sigma [0.6,  0.8]
-
-            for (int l = 1; l < NumFlocks - 1; l++) // если не изменяет память, передвижение лидеров средних стай
+            for (int i = 1; i < NP; i++)
             {
-                int moveCount = (int)Math.Floor(sigma * NStep);
-
-                List<Perch> move = new List<Perch>();
-                for (int k = 0; k < moveCount; ++k)
+                for (int j = 0; j < N_dim; j++)
                 {
-                    Perch perch = new Perch(N_dim);
-                    for (int m = 0; m < N_dim / 2; m++)
-                    {
-                        double tmp = flock[l, 0].coords[m] + k * ((flock[0, 0].coords[m] - flock[l, 0].coords[m]) / (NStep));
-                        if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                            tmp = flock[l, 0].coords[m];
-                        perch.coords[m] = tmp;
-                    }
-                    for (int m = N_dim / 2; m < N_dim; m++)
-                    {
-                        double tmp = flock[l, 0].coords[m] + k * ((flock[0, 0].coords[m] - flock[l, 0].coords[m]) / (NStep));
-                        if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                            tmp = flock[l, 0].coords[m];
-                        perch.coords[m] = tmp;
-                    }
-                    I(perch);
-                    move.Add(perch);
+                    double val = best.coords[j] + r * (-0.5 * (U[0].Item2 + U[0].Item1) + ((U[0].Item2 - U[0].Item1) * random.NextDouble() + U[0].Item1));
+
+                    if (val < U[0].Item1)
+                        val = (best.coords[j] - U[0].Item1) * random.NextDouble() + U[0].Item1;
+
+                    if (val > U[0].Item2)
+                        val = (U[0].Item2 - best.coords[j]) * random.NextDouble() + best.coords[j];
+
+                    individuals[i].coords[j] = val;
                 }
-
-                //Sort(move);
-                move = move.OrderBy(s => s.fitness).ToList();
-                flock[l, 0] = move[0];
-
-                for (int j = 0; j < NumPerchInFlock; j++)
-                {
-                    int moveCount1 = (int)Math.Floor(sigma * NStep);
-
-                    List<Perch> move1 = new List<Perch>();
-                    for (int k = 0; k < moveCount1; ++k)
-                    {
-                        Perch perch = new Perch(N_dim);
-                        for (int p = 0; p < N_dim / 2; p++)
-                        {
-                            double tmp = flock[l, j].coords[p] + k * ((flock[l, 0].coords[p] - flock[l, j].coords[p]) / (NStep));
-                            if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                                tmp = flock[l, j].coords[p];
-                            perch.coords[p] = tmp;
-                        }
-                        for (int p = N_dim / 2; p < N_dim; p++)
-                        {
-                            double tmp = flock[l, j].coords[p] + k * ((flock[l, 0].coords[p] - flock[l, j].coords[p]) / (NStep));
-                            if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                                tmp = flock[l, j].coords[p];
-                            perch.coords[p] = tmp;
-                        }
-                        I(perch);
-                        move1.Add(perch);
-                    }
-                    move1 = move1.OrderBy(s => s.fitness).ToList();
-                    flock[l, j] = move1[0];
-                }
-                Sort(flock, l);
+                I(individuals[i]);
             }
-            SortFlocks();
         }
 
-        protected override void PoorFlockSwim() // +
+        public override void BestCoordCorrect(Vector bestCoords, int k)
         {
-            List<double> PoorLeaderCoord = new List<double>();
-            for (int p = 0; p < N_dim; p++)
+            for (int j = 0; j < N_dim; j++)
             {
-                PoorLeaderCoord.Add(flock[NumFlocks - 1, 0].coords[p]);
+                if ((best.coords[j] < U[0].Item1) || (best.coords[j] > U[0].Item2))
+                {
+                    int NumTries = 0;
+                    Vector tmp;
+                    do
+                    {
+                        tmp = new Vector(Levy());
+                        tmp[j] *= (alpha / (k + 1));
+                        tmp[j] += bestCoords[j];
+                        ++NumTries;
+                    } while (((tmp[j] < U[0].Item1) || (tmp[j] > U[0].Item2)) && (NumTries <= 10));
+
+                    best.coords[j] = (NumTries > 10) ? ((U[0].Item2 - U[0].Item1) * random.NextDouble() + U[0].Item1) : tmp[j];
+                }
             }
-            PoorLeaderSwim();
-            for (int p = 0; p < PoorLeaderCoord.Count; p++)
+        }
+
+        public override void StohasticJump(Tit new_tit, double beta, int j)
+        {
+            if (beta < mu * h)
             {
-                int NumTries = 0;
-                while (((flock[NumFlocks - 1, 0].coords[p] < U[0].Item1) || (flock[NumFlocks - 1, 0].coords[p] > U[0].Item2)) && (NumTries < 10))
+                Vector Thetta = new Vector(individuals[j].coords.dim);
+                for (int i = 0; i < individuals[j].coords.dim; i++)
                 {
-                    for (int w = 0; w < N_dim; w++)
-                    {
-                        flock[NumFlocks - 1, 0].coords[w] = PoorLeaderCoord[w];
-                    }
-                    PoorLeaderSwim();
-                    NumTries += 1;
-                    if (NumTries == 10)
-                        break;
+                    double delta_i = Math.Min(U[0].Item2 - new_tit.coords[i], new_tit.coords[i] - U[0].Item1);
+                    Thetta[i] = random.NextDouble() * 2 * delta_i - delta_i;
                 }
-                bool ok = false;
-                for (int d = 0; d < N_dim; ++d)
-                {
-                    if (flock[NumFlocks - 1, 0].coords[d] < U[0].Item1 || flock[NumFlocks - 1, 0].coords[d] > U[0].Item2)
-                    {
-                        ok = true;
-                        break;
-                    }
-                }
-                if (ok)
-                    for (int pL = 0; pL < N_dim; pL++)
-                    {
-                        flock[NumFlocks - 1, 0].coords[pL] = U[0].Item1 + rand.NextDouble() * (U[0].Item2 - U[0].Item1);
-                    }
+
+                new_tit.coords += Thetta;
+                I(new_tit);
             }
+        }
 
-            sigma = rand.NextDouble() * 0.4 + 0.1; // sigma [0.1,  0.5]
-
-            List<double> Min = new List<double>(N_dim);
-
-            for (int j = 0; j < N_dim / 2; j++)
-                Min.Add(Math.Min((flock[NumFlocks - 1, 0].coords[j] - U[0].Item1), (U[0].Item2 - flock[NumFlocks - 1, 0].coords[j])));
-            for (int j = N_dim / 2; j < N_dim; j++)
-                Min.Add(Math.Min((flock[NumFlocks - 1, 0].coords[j] - U[0].Item1), (U[0].Item2 - flock[NumFlocks - 1, 0].coords[j])));
-
-            for (int j = 1; j < NumPerchInFlock; j++)
+        public override void CheckBorders(Tit new_tit)
+        {
+            for (int i = 0; i < N_dim; i++)
             {
-                List<Tuple<double, double>> coords = new List<Tuple<double, double>>(N_dim);
-                List<double> res = new List<double>(N_dim);
+                if (new_tit.coords[i] < U[0].Item1)
+                    new_tit.coords[i] = U[0].Item1;
 
-                for (int p = 0; p < N_dim; p++)
-                {
-                    double x1 = flock[NumFlocks - 1, 0].coords[p] - Min[p];
-                    double x2 = flock[NumFlocks - 1, 0].coords[p] + Min[p];
-                    coords.Add(new Tuple<double, double>(x1, x2));
-                }
-
-                Perch perch = new Perch(N_dim);
-                for (int k = 0; k < N_dim; k++)
-                {
-                    res.Add(coords[k].Item1 + rand.NextDouble() * (coords[k].Item2 - coords[k].Item1));
-                    perch.coords[k] = res[k]; //*
-                }
-
-                I(perch);
-                flock[NumFlocks - 1, j] = perch; //*
+                if (new_tit.coords[i] > U[0].Item2)
+                    new_tit.coords[i] = U[0].Item2;
             }
+        }
 
-            int i = 1;
-
-            for (int j = 0; j < NumPerchInFlock; j++) // всех окуней из худших двигаем к лидеру худшей стаи
+        public override void InitalPopulationGeneration()
+        {
+            for (int i = 0; i < NP; i++)
             {
-                int moveCount = (int)Math.Floor(sigma * NStep);
-
-                List<Perch> move = new List<Perch>();
-                for (int k = 0; k < moveCount; ++k)
+                Tit tit = new Tit(N_dim);
+                for (int j = 0; j < N_dim; j++)
                 {
-                    Perch perch = new Perch(N_dim);
-                    for (int p = 0; p < N_dim / 2; p++)
-                    {
-                        double tmp = flock[i, j].coords[p] + k * ((flock[i, 0].coords[p] - flock[i, j].coords[p]) / (NStep));
-                        if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                            tmp = flock[i, j].coords[p];
-                        perch.coords[p] = tmp;
-                    }
-                    for (int p = N_dim / 2; p < N_dim; p++)
-                    {
-                        double tmp = flock[i, j].coords[p] + k * ((flock[i, 0].coords[p] - flock[i, j].coords[p]) / (NStep));
-                        if (tmp < U[0].Item1 || tmp > U[0].Item2)
-                            tmp = flock[i, j].coords[p];
-                        perch.coords[p] = tmp;
-                    }
-                    I(perch);
-                    move.Add(perch);
+                    tit.coords[j] = U[0].Item1 + random.NextDouble() * (U[0].Item2 - U[0].Item1);
                 }
-                //Sort(move);
-                move = move.OrderBy(s => s.fitness).ToList();
-                flock[i, j] = move[0];
+
+                I(tit);
+                individuals.Add(tit);
             }
-            Sort(flock, i);
         }
     }
 }

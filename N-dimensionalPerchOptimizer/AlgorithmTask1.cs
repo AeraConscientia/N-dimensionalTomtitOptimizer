@@ -15,6 +15,33 @@ namespace N_dimensionalTomtitOptimizer
             U.Add(new Tuple<double, double>(U1, U2));
         }
 
+        public override void I(Tit tit, bool flag = false)
+        {
+            List<double> x = new List<double>();
+            x.Add(x0[0]);
+
+            for (int i = 1; i < N_dim + 1; i++)
+                x.Add(x[x.Count - 1] + tit.coords[i - 1]);
+
+            double res = 0;
+            for (int t = 0; t < N_dim; t++)
+                res += (1f / (t + 1)) * tit.coords[t] * tit.coords[t];
+
+            res += 2 * x[x.Count - 1];
+            tit.fitness = res;
+            if (flag == true)
+            {
+                Result result = Result.GetInstance();
+                result.X = x;
+                result.fitness = tit.fitness;
+                result.U = new List<double>(N_dim);
+                for (int i = 0; i < N_dim; i++)
+                {
+                    result.U.Add(tit.coords[i]);
+                }
+            }
+        }
+
         public override Vector Levy()
         {
             Vector koefLevy = new Vector(N_dim);
@@ -125,33 +152,6 @@ namespace N_dimensionalTomtitOptimizer
 
                 if (new_tit.coords[i] > U[0].Item2)
                     new_tit.coords[i] = U[0].Item2;
-            }
-        }
-
-        public override void I(Tit tit, bool flag = false)
-        {
-            List<double> x = new List<double>();
-            x.Add(x0[0]);
-
-            for (int i = 1; i < N_dim + 1; i++)
-                x.Add(x[x.Count - 1] + tit.coords[i - 1]);
-
-            double res = 0;
-            for (int t = 0; t < N_dim; t++)
-                res += (1f / (t + 1)) * tit.coords[t] * tit.coords[t];
-
-            res += 2 * x[x.Count - 1];
-            tit.fitness = res;
-            if (flag == true)
-            {
-                Result result = Result.GetInstance();
-                result.X = x;
-                result.fitness = tit.fitness;
-                result.U = new List<double>(N_dim);
-                for (int i = 0; i < N_dim; i++)
-                {
-                    result.U.Add(tit.coords[i]);
-                }
             }
         }
 
