@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization.Formatters;
-using System.Text;
 
 namespace N_dimensionalTomtitOptimizer
 {
@@ -93,7 +91,6 @@ namespace N_dimensionalTomtitOptimizer
                         list[j + 1] = tmp;
                     }
         }
-
 
         /// <summary>Сортировка всех окуней в своей стае</summary>
         protected void Sort(Perch[,] perches, int flockIndex) // *
