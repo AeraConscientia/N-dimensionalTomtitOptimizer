@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FDD10EB6-F04E-44FF-A011-09F21215C5E4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>N_dimensionalPerchOptimizer</RootNamespace>
-    <AssemblyName>N-dimensionalPerchOptimizer</AssemblyName>
+    <RootNamespace>N_dimensionalTomtitOptimizer</RootNamespace>
+    <AssemblyName>N-dimensionalTomtitOptimizer</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

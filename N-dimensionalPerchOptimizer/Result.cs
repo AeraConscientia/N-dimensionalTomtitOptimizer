@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace N_dimensionalPerchOptimizer
+namespace N_dimensionalTomtitOptimizer
 {
     public class Result
     {

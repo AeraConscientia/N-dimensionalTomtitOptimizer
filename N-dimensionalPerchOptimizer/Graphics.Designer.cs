@@ -1,4 +1,4 @@
-﻿namespace N_dimensionalPerchOptimizer
+﻿namespace N_dimensionalTomtitOptimizer
 {
     partial class Graphics
     {
@@ -557,7 +557,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Save;
+            this.pictureBox1.BackgroundImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Save;
             this.pictureBox1.Location = new System.Drawing.Point(456, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 35);

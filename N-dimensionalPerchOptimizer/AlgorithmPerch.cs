@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
 
-namespace N_dimensionalPerchOptimizer
+namespace N_dimensionalTomtitOptimizer
 {
     public abstract class AlgorithmPerch
     {

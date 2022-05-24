@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Drawing.Design;
 
-namespace N_dimensionalPerchOptimizer
+namespace N_dimensionalTomtitOptimizer
 {
     public partial class FormMain : Form
     {

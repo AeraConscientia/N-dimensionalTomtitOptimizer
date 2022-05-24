@@ -1,4 +1,4 @@
-﻿namespace N_dimensionalPerchOptimizer
+﻿namespace N_dimensionalTomtitOptimizer
 {
     partial class FormMain
     {
@@ -1669,8 +1669,8 @@
             // pictureBoxExample
             // 
             this.pictureBoxExample.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBoxExample.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
-            this.pictureBoxExample.InitialImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBoxExample.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBoxExample.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
             this.pictureBoxExample.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxExample.Name = "pictureBoxExample";
             this.pictureBoxExample.Size = new System.Drawing.Size(723, 230);
@@ -1679,7 +1679,7 @@
             // 
             // pictureBox11
             // 
-            this.pictureBox11.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x;
+            this.pictureBox11.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
             this.pictureBox11.Location = new System.Drawing.Point(11, 25);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(47, 16);
@@ -1715,7 +1715,7 @@
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x3;
+            this.pictureBox9.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x3;
             this.pictureBox9.Location = new System.Drawing.Point(423, 26);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(51, 17);
@@ -1724,7 +1724,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x2;
+            this.pictureBox8.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
             this.pictureBox8.Location = new System.Drawing.Point(233, 25);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(51, 17);
@@ -1733,7 +1733,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x1;
+            this.pictureBox7.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
             this.pictureBox7.Location = new System.Drawing.Point(11, 25);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(51, 17);
@@ -1743,8 +1743,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex2_Large;
-            this.pictureBox1.InitialImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox1.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex2_Large;
+            this.pictureBox1.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(723, 230);
@@ -1772,8 +1772,8 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox2.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex3_Large;
-            this.pictureBox2.InitialImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox2.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex3_Large;
+            this.pictureBox2.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(723, 230);
@@ -1791,7 +1791,7 @@
             // 
             // pictureBox15
             // 
-            this.pictureBox15.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x;
+            this.pictureBox15.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
             this.pictureBox15.Location = new System.Drawing.Point(11, 25);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(47, 16);
@@ -1801,8 +1801,8 @@
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox14.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex4_Large;
-            this.pictureBox14.InitialImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox14.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex4_Large;
+            this.pictureBox14.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
             this.pictureBox14.Location = new System.Drawing.Point(0, 0);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(723, 230);
@@ -1811,7 +1811,7 @@
             // 
             // pictureBox18
             // 
-            this.pictureBox18.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.u;
+            this.pictureBox18.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
             this.pictureBox18.Location = new System.Drawing.Point(83, 30);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(43, 17);
@@ -1820,7 +1820,7 @@
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x2;
+            this.pictureBox20.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
             this.pictureBox20.Location = new System.Drawing.Point(233, 25);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(51, 17);
@@ -1829,7 +1829,7 @@
             // 
             // pictureBox21
             // 
-            this.pictureBox21.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x1;
+            this.pictureBox21.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
             this.pictureBox21.Location = new System.Drawing.Point(11, 25);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(51, 17);
@@ -1839,8 +1839,8 @@
             // pictureBox22
             // 
             this.pictureBox22.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox22.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex5_Large;
-            this.pictureBox22.InitialImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox22.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex5_Large;
+            this.pictureBox22.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
             this.pictureBox22.Location = new System.Drawing.Point(0, 0);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(723, 230);
@@ -1849,7 +1849,7 @@
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.u;
+            this.pictureBox16.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
             this.pictureBox16.Location = new System.Drawing.Point(83, 30);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(43, 17);
@@ -1858,7 +1858,7 @@
             // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x2;
+            this.pictureBox19.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
             this.pictureBox19.Location = new System.Drawing.Point(233, 25);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(51, 17);
@@ -1867,7 +1867,7 @@
             // 
             // pictureBox23
             // 
-            this.pictureBox23.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x1;
+            this.pictureBox23.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
             this.pictureBox23.Location = new System.Drawing.Point(11, 25);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(51, 17);
@@ -1877,8 +1877,8 @@
             // pictureBox17
             // 
             this.pictureBox17.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox17.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex6_Large;
-            this.pictureBox17.InitialImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox17.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex6_Large;
+            this.pictureBox17.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
             this.pictureBox17.Location = new System.Drawing.Point(0, 0);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(723, 230);
@@ -1887,7 +1887,7 @@
             // 
             // pictureBox24
             // 
-            this.pictureBox24.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.u;
+            this.pictureBox24.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
             this.pictureBox24.Location = new System.Drawing.Point(83, 30);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(43, 17);
@@ -1896,7 +1896,7 @@
             // 
             // pictureBox26
             // 
-            this.pictureBox26.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x2;
+            this.pictureBox26.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
             this.pictureBox26.Location = new System.Drawing.Point(233, 25);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(51, 17);
@@ -1905,7 +1905,7 @@
             // 
             // pictureBox27
             // 
-            this.pictureBox27.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x1;
+            this.pictureBox27.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
             this.pictureBox27.Location = new System.Drawing.Point(11, 25);
             this.pictureBox27.Name = "pictureBox27";
             this.pictureBox27.Size = new System.Drawing.Size(51, 17);
@@ -1915,7 +1915,7 @@
             // pictureBox25
             // 
             this.pictureBox25.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox25.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex7_Large;
+            this.pictureBox25.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex7_Large;
             this.pictureBox25.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox25.InitialImage")));
             this.pictureBox25.Location = new System.Drawing.Point(0, 0);
             this.pictureBox25.Name = "pictureBox25";
@@ -1925,7 +1925,7 @@
             // 
             // pictureBox28
             // 
-            this.pictureBox28.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.u;
+            this.pictureBox28.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.u;
             this.pictureBox28.Location = new System.Drawing.Point(83, 30);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(43, 17);
@@ -1934,7 +1934,7 @@
             // 
             // pictureBox29
             // 
-            this.pictureBox29.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x2;
+            this.pictureBox29.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x2;
             this.pictureBox29.Location = new System.Drawing.Point(233, 25);
             this.pictureBox29.Name = "pictureBox29";
             this.pictureBox29.Size = new System.Drawing.Size(51, 17);
@@ -1943,7 +1943,7 @@
             // 
             // pictureBox30
             // 
-            this.pictureBox30.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x1;
+            this.pictureBox30.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x1;
             this.pictureBox30.Location = new System.Drawing.Point(11, 25);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(51, 17);
@@ -1953,7 +1953,7 @@
             // pictureBox31
             // 
             this.pictureBox31.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox31.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex8_Large;
+            this.pictureBox31.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex8_Large;
             this.pictureBox31.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox31.InitialImage")));
             this.pictureBox31.Location = new System.Drawing.Point(0, 0);
             this.pictureBox31.Name = "pictureBox31";
@@ -1963,7 +1963,7 @@
             // 
             // pictureBox35
             // 
-            this.pictureBox35.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.gamma;
+            this.pictureBox35.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.gamma;
             this.pictureBox35.Location = new System.Drawing.Point(610, 325);
             this.pictureBox35.Name = "pictureBox35";
             this.pictureBox35.Size = new System.Drawing.Size(44, 14);
@@ -1982,8 +1982,8 @@
             // pictureBox33
             // 
             this.pictureBox33.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox33.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex10_Large;
-            this.pictureBox33.InitialImage = global::N_dimensionalPerchOptimizer.Properties.Resources.Ex1_Large;
+            this.pictureBox33.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex10_Large;
+            this.pictureBox33.InitialImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Ex1_Large;
             this.pictureBox33.Location = new System.Drawing.Point(0, 0);
             this.pictureBox33.Name = "pictureBox33";
             this.pictureBox33.Size = new System.Drawing.Size(723, 230);
@@ -1992,7 +1992,7 @@
             // 
             // pictureBox34
             // 
-            this.pictureBox34.Image = global::N_dimensionalPerchOptimizer.Properties.Resources.x;
+            this.pictureBox34.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.x;
             this.pictureBox34.Location = new System.Drawing.Point(11, 25);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(47, 16);

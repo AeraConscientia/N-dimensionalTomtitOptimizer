@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace N_dimensionalPerchOptimizer
+namespace N_dimensionalTomtitOptimizer
 {
     public partial class ErrorGraph : Form
     {

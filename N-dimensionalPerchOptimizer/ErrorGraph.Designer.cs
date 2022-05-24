@@ -1,4 +1,4 @@
-﻿namespace N_dimensionalPerchOptimizer
+﻿namespace N_dimensionalTomtitOptimizer
 {
     partial class ErrorGraph
     {

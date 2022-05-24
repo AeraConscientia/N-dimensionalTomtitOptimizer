@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
-namespace N_dimensionalPerchOptimizer
+namespace N_dimensionalTomtitOptimizer
 {
     public partial class Graphics : Form
     {
