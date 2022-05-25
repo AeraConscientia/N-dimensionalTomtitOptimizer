@@ -136,6 +136,7 @@ namespace N_dimensionalTomtitOptimizer
             }
 
             result = new Tit(Pool.OrderBy(t => t.fitness).ToList()[0]);
+            I(result, true);
             return result;        //Шаг 4
         }
 
