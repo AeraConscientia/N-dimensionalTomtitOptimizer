@@ -21,22 +21,22 @@ namespace N_dimensionalTomtitOptimizer
             List<double> x2 = new List<double>();
             x1.Add(x0[0]); x2.Add(x0[1]);
 
-            for (int i = 0; i < N_dim / 2; i++) // тут решилась проблема с количеством x
+            for (int i = 0; i < N_dim; i++) // N_dim / 2
             {
                 x1.Add(x2[i]);
-                x2.Add(2 * x2[i] - x1[i] + tit.coords[i] / ((N_dim / 2) * (N_dim / 2)));
+                x2.Add(2 * x2[i] - x1[i] + tit.coords[i] / (N_dim * N_dim)); // N_dim / 2
             }
 
 
             // значение функционала какое-то не такое
             double res = 0;
-            res = -x1[N_dim / 2];
+            res = -x1[N_dim]; // N_dim / 2
             double res2 = 0;
-            for (int t = 0; t < N_dim / 2; t++) // N_dim или N_dim-1 ?
+            for (int t = 0; t < N_dim; t++) // N_dim / 2
             {
                 res2 += tit.coords[t] * tit.coords[t];
             }
-            res += (res2 / (2 * N_dim / 2));
+            res += (res2 / (2 * N_dim)); // N_dim / 2
 
             tit.fitness = res;
             if (flag == true)
@@ -45,9 +45,9 @@ namespace N_dimensionalTomtitOptimizer
                 result.X = x1;
                 result.X2 = x2;
                 result.fitness = tit.fitness;
-                result.U = new List<double>(N_dim / 2);
+                result.U = new List<double>(N_dim); // N_dim / 2
 
-                for (int i = 0; i < N_dim / 2; i++)
+                for (int i = 0; i < N_dim; i++) // N_dim / 2
                 {
                     result.U.Add(tit.coords[i]);
                 }

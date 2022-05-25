@@ -328,7 +328,7 @@ namespace N_dimensionalTomtitOptimizer
                 case 6: // Пример 7
                 case 7: // Пример 8
                     r.Write(String.Format(@"
-    Количество точек разбиения (шагов): {0, 5}", N_dim / 2));
+    Количество точек разбиения (шагов): {0, 5}", N_dim));
                     switch (tabControl2.SelectedIndex)
                     {
                         case 4:
@@ -428,28 +428,28 @@ namespace N_dimensionalTomtitOptimizer
                 case 5:
                 case 6:
                 case 7:
-                    X   = new object[N_dim / 2 + 1];
-                    X2  = new object[N_dim / 2 + 1];
-                    U   = new object[N_dim / 2];
-                    for (int i = 0; i < N_dim / 2 ; i++)
+                    X   = new object[N_dim + 1];//[N_dim / 2 + 1];
+                    X2  = new object[N_dim + 1];//[N_dim / 2 + 1];
+                    U   = new object[N_dim];    //[N_dim / 2];
+                    for (int i = 0; i < N_dim; i++) // N_dim / 2 
                     {
                         U[i] = result.U[i];
                     }
-                    for (int i = 0; i < N_dim / 2 + 1; i++)
+                    for (int i = 0; i < N_dim + 1; i++) // N_dim / 2 + 1
                     {
                         X[i] = result.X[i];
                         X2[i] = result.X2[i];
                     }
                     dataGridViewX_separate.Rows.Clear();
                     dataGridViewX_separate.RowCount = 2;
-                    dataGridViewX_separate.ColumnCount = N_dim / 2 + 1;
+                    dataGridViewX_separate.ColumnCount = N_dim + 1; // N_dim / 2 + 1
 
                     dataGridViewX_separate.Rows[0].SetValues(X);
                     dataGridViewX_separate.Rows[1].SetValues(X2);
 
                     dataGridViewU_separate.Rows.Clear();
                     dataGridViewU_separate.RowCount = 1;
-                    dataGridViewU_separate.ColumnCount = N_dim / 2;
+                    dataGridViewU_separate.ColumnCount = N_dim; // N_dim / 2
                     dataGridViewU_separate.Rows[0].SetValues(U);
 
                     dataGridViewX_separate.Rows[0].DefaultCellStyle.Format = "n5";
@@ -459,12 +459,12 @@ namespace N_dimensionalTomtitOptimizer
                     r.Write(String.Format(@"
     Оптимальное управление u*:
 ")); r.Write(String.Format("\r\n"));
-                    for (int i = 0; i < N_dim / 2; i++) r.Write(String.Format(@" {0, 10:f5}", U[i])); r.Write(String.Format("\r\n"));
+                    for (int i = 0; i < N_dim; i++) r.Write(String.Format(@" {0, 10:f5}", U[i])); r.Write(String.Format("\r\n")); //N_dim / 2
                     r.Write(String.Format(@"
     Оптимальная траектория x*:
 ")); r.Write(String.Format("\r\n"));
-                    for (int i = 0; i < N_dim / 2 + 1; i++) r.Write(String.Format(@" {0, 10:f5}", X[i])); r.Write(String.Format("\r\n"));
-                    for (int i = 0; i < N_dim / 2 + 1; i++) r.Write(String.Format(@" {0, 10:f5}", X2[i])); r.Write(String.Format("\r\n"));
+                    for (int i = 0; i < N_dim + 1; i++) r.Write(String.Format(@" {0, 10:f5}", X[i])); r.Write(String.Format("\r\n")); // N_dim / 2 + 1
+                    for (int i = 0; i < N_dim + 1; i++) r.Write(String.Format(@" {0, 10:f5}", X2[i])); r.Write(String.Format("\r\n")); //N_dim / 2 + 1
                     break;
 
                 case 1:     // трехмерный случай
