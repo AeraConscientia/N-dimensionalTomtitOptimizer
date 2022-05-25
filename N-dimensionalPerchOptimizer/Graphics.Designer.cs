@@ -80,8 +80,8 @@
             this.chartU_2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.chartU_3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonSaveGraphs = new System.Windows.Forms.Button();
             this.tabControlX.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartX_1)).BeginInit();
@@ -96,7 +96,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartU_2)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartU_3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlX
@@ -555,16 +554,18 @@
             this.chartU_3.Titles.Add(title17);
             this.chartU_3.Titles.Add(title18);
             // 
-            // pictureBox1
+            // buttonSaveGraphs
             // 
-            this.pictureBox1.BackgroundImage = global::N_dimensionalTomtitOptimizer.Properties.Resources.Save;
-            this.pictureBox1.Location = new System.Drawing.Point(456, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "Сохранить все графики");
-            this.pictureBox1.Click += new System.EventHandler(this.buttonSaveImg_Click);
+            this.buttonSaveGraphs.FlatAppearance.BorderColor = System.Drawing.SystemColors.Control;
+            this.buttonSaveGraphs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.OliveDrab;
+            this.buttonSaveGraphs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSaveGraphs.Image = global::N_dimensionalTomtitOptimizer.Properties.Resources.Save;
+            this.buttonSaveGraphs.Location = new System.Drawing.Point(456, 4);
+            this.buttonSaveGraphs.Name = "buttonSaveGraphs";
+            this.buttonSaveGraphs.Size = new System.Drawing.Size(34, 36);
+            this.buttonSaveGraphs.TabIndex = 4;
+            this.buttonSaveGraphs.UseVisualStyleBackColor = true;
+            this.buttonSaveGraphs.Click += new System.EventHandler(this.buttonSaveGraphs_Click);
             // 
             // Graphics
             // 
@@ -572,7 +573,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(500, 682);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.buttonSaveGraphs);
             this.Controls.Add(this.tabControlU);
             this.Controls.Add(this.tabControlX);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -592,7 +593,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartU_2)).EndInit();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartU_3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -613,7 +613,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartX_3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartU_2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartU_3;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button buttonSaveGraphs;
     }
 }

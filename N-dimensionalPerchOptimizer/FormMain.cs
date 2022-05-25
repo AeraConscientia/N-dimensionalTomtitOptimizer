@@ -75,7 +75,7 @@ namespace N_dimensionalTomtitOptimizer
         /// <summary>Загрузка параметров аглоритма</summary>
         private void InitDataGridView()
         {
-            dataGridView2.RowCount = 14;
+            dataGridView2.RowCount = 13;
             dataGridView2.Rows[0].Cells[0].Value = "Размер популяции";
             dataGridView2.Rows[0].Cells[1].Value = 100;
             
@@ -137,10 +137,9 @@ namespace N_dimensionalTomtitOptimizer
             K       = Convert.ToInt32( dataGridView2.Rows[7].Cells[1].Value);
             h       = Convert.ToDouble(dataGridView2.Rows[8].Cells[1].Value);
             L       = Convert.ToInt32( dataGridView2.Rows[9].Cells[1].Value);
-            T       = Convert.ToDouble(dataGridView2.Rows[10].Cells[1].Value);
-            P       = Convert.ToInt32( dataGridView2.Rows[11].Cells[1].Value);
-            mu      = Convert.ToDouble(dataGridView2.Rows[12].Cells[1].Value);
-            eps     = Convert.ToDouble(dataGridView2.Rows[13].Cells[1].Value);
+            P       = Convert.ToInt32( dataGridView2.Rows[10].Cells[1].Value);
+            mu      = Convert.ToDouble(dataGridView2.Rows[11].Cells[1].Value);
+            eps     = Convert.ToDouble(dataGridView2.Rows[12].Cells[1].Value);
 
             // Для Леви
             lambda  = Convert.ToDouble(dataGridView4.Rows[0].Cells[1].Value);
@@ -375,17 +374,22 @@ namespace N_dimensionalTomtitOptimizer
                     
                     break;
             }
-//            r.Write(String.Format(@"
-//2. ПАРАМЕТРЫ МЕТОДА СТАИ ОКУНЕЙ
-//    Количество шагов до окончания
-//                        движения:       {0,5}
-//    Максимальное количество итераций:   {1,5}
-//    Количество стай:                    {2,5}
-//    Количество окуней в стае:           {3,5}
-//    Число перекоммутаций:               {4,5}
-//    Число шагов в перекоммутации:       {5,5}
-//    Параметр распределения Леви:        {6,5:f3}
-//    Величина шага:                      {7,5:f3}", NStep, MaxIteration, NumFlocks, NumPerchInFlock, PRmax, deltapr, lambda, alfa));
+            r.Write(String.Format(@"
+2. ПАРАМЕТРЫ МЕТОДА СТАИ СИНИЦ
+    Размер популяции NP:    {0, 5}
+     gamma:                 {1, 5:f3}
+       eta:                 {2, 5:f3}
+     alpha:                 {3, 5:f3}
+    lambda:                 {4, 5:f3}
+         P:                 {5, 5}
+         K:                 {6, 5}
+         L:                 {7, 5}
+        mu:                 {8, 5:f3}
+         h:                 {9, 5:f3}
+        c1:                 {10,5:f3}
+        c2:                 {11,5:f3}
+        c3:                 {12,5:f3}
+       rho:                 {13,5:f3}", NP, gamma, eta, alpha, lambda, P, K, L, mu, h, c1, c2, c3, rho));
 
             r.Write(String.Format(@"
 3. РЕЗУЛЬТАТЫ РАБОТЫ"));
@@ -550,7 +554,7 @@ namespace N_dimensionalTomtitOptimizer
             }
             if (tabControl2.SelectedIndex == 6)
                 errorGraph.UpdateErrorGraph(6, N_dim);
-            //task = tabControl2.SelectedIndex;
+
             if (graphics == null)
                 switch (tabControl2.SelectedIndex)
                 {
@@ -611,7 +615,6 @@ namespace N_dimensionalTomtitOptimizer
                     case 6:
                     case 7:
                         graphics.UpdateGraph(2, tabControl2.SelectedIndex);
-                        //if (tabControl2.SelectedIndex == 6)
                     break;
                     default:
                         break;

@@ -209,27 +209,29 @@ namespace N_dimensionalTomtitOptimizer
         }
 
         /// <summary>Сохранение всех графиков в папку</summary>
-        private void buttonSaveImg_Click(object sender, EventArgs e)
+        private void buttonSaveGraphs_Click(object sender, EventArgs e)
         {
+            Bitmap bitmapChart = new Bitmap(chartX_1.Width, chartX_1.Height); // все графики имеют один размер, так что все равно, какой писать: Х1,Х2,...,U3
+            bitmapChart.SetResolution(300, 300);
 
             switch (Dim)
             {
                 case 1:
-                    chartX_1.SaveImage($"SavedTask{TaskNumber}_X1.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartU_1.SaveImage($"SavedTask{TaskNumber}_U1.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
+                    chartX_1.DrawToBitmap(bitmapChart, chartX_1.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_X1.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartU_1.DrawToBitmap(bitmapChart, chartU_1.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_U1.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
                     break;
                 case 2:
-                    chartX_1.SaveImage($"SavedTask{TaskNumber}_X1.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartX_2.SaveImage($"SavedTask{TaskNumber}_X2.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartU_1.SaveImage($"SavedTask{TaskNumber}_U1.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
+                    chartX_1.DrawToBitmap(bitmapChart, chartX_1.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_X1.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartX_2.DrawToBitmap(bitmapChart, chartX_2.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_X2.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartU_1.DrawToBitmap(bitmapChart, chartU_1.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_U1.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
                     break;
                 case 3:
-                    chartX_1.SaveImage($"SavedTask{TaskNumber}_X1.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartX_2.SaveImage($"SavedTask{TaskNumber}_X2.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartX_3.SaveImage($"SavedTask{TaskNumber}_X3.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartU_1.SaveImage($"SavedTask{TaskNumber}_U1.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartU_2.SaveImage($"SavedTask{TaskNumber}_U2.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
-                    chartU_3.SaveImage($"SavedTask{TaskNumber}_U3.png", System.Windows.Forms.DataVisualization.Charting.ChartImageFormat.Png);
+                    chartX_1.DrawToBitmap(bitmapChart, chartX_1.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_X1.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartX_2.DrawToBitmap(bitmapChart, chartX_2.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_X2.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartX_3.DrawToBitmap(bitmapChart, chartX_3.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_X3.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartU_1.DrawToBitmap(bitmapChart, chartU_1.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_U1.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartU_2.DrawToBitmap(bitmapChart, chartU_2.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_U2.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
+                    chartU_3.DrawToBitmap(bitmapChart, chartU_3.ClientRectangle); bitmapChart.Save($"SavedTask{TaskNumber}_U3.tiff", System.Drawing.Imaging.ImageFormat.Tiff);
                     break;
                 default:
                     break;
