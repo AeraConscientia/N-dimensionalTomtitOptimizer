@@ -19,6 +19,8 @@ namespace N_dimensionalTomtitOptimizer
 
         public override void I(Tit tit, bool flag = false)
         {
+            base.I(tit, flag);
+
             List<double> x1 = new List<double>();
             List<double> x2 = new List<double>();
             List<double> x3 = new List<double>();

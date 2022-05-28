@@ -24,6 +24,8 @@ namespace N_dimensionalTomtitOptimizer
         public List<double> Xn;
         public List<double> X;
 
+
+        uint I_CallsCount = 0;
         public Tit result;
         public int NP;
         public double alpha;
@@ -50,7 +52,12 @@ namespace N_dimensionalTomtitOptimizer
 
         public AlgorithmTit() { }
 
-        public abstract void I(Tit perch, bool flag = false);
+        public virtual void I(Tit perch, bool flag = false) 
+        {
+#if DEBUG
+            I_CallsCount++;
+#endif
+        }
         public abstract void InitalPopulationGeneration();
         public abstract void GenerationAroundPool();
         public abstract void GenerationAroundBest();
@@ -64,6 +71,8 @@ namespace N_dimensionalTomtitOptimizer
         public Tit StartAlg(int NP, double alpha, double gamma, double lambda, double eta, double rho, double c1, double c2, double c3,
             double K, double h, double L, double P, double mu, double eps, int N_dim)
         {
+            I_CallsCount = 0;       //Обнуляем число подсчетов
+
             //Шаг 1.1
             this.NP = NP;
             this.alpha = alpha;
@@ -137,6 +146,12 @@ namespace N_dimensionalTomtitOptimizer
 
             result = new Tit(Pool.OrderBy(t => t.fitness).ToList()[0]);
             I(result, true);
+
+#if DEBUG
+            Console.WriteLine("------------------------------------------------");
+            Console.WriteLine("Число подсчетов целевой функции: " + I_CallsCount);        //Вывод числа подсчета целевой функции
+            Console.WriteLine("------------------------------------------------");
+#endif
             return result;        //Шаг 4
         }
 
