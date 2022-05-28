@@ -52,7 +52,7 @@ namespace N_dimensionalTomtitOptimizer
 
         public AlgorithmTit() { }
 
-        public virtual void I(Tit perch, bool flag = false) 
+        public virtual void I(Tit tit, bool flag = false) 
         {
 #if DEBUG
             I_CallsCount++;
